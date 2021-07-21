@@ -64,7 +64,7 @@ class SimpleAgent(OneShotAgent):
 
 class BetterAgent(SimpleAgent):
 
-    def __init__(self, *args, concession_exponent=5, **kwargs):
+    def __init__(self, *args, concession_exponent=0.2, **kwargs):
         super().__init__(*args, **kwargs)
         self._e = concession_exponent
 
